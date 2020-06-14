@@ -30,7 +30,7 @@
         <div id="app">
             {{-- 画面上部に表示するナビゲーションバーです。 --}}
             <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
-                <div class="container">
+                <div class=“container” style=“width:100%;margin-left: auto;“>
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
@@ -42,6 +42,8 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav mr-auto">
+                                                    <!-- Right Side Of Navbar -->
+                        <ul class="navbar-nav ml-auto">
  {{-- 以下を追記 --}}
                         <!-- Authentication Links -->
                         {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
@@ -70,8 +72,7 @@
                             {{-- 以上までを追記 --}}
                         </ul>
 
-                        <!-- Right Side Of Navbar -->
-                        <ul class="navbar-nav ml-auto">
+
                         </ul>
                     </div>
                 </div>
